@@ -1,0 +1,6 @@
+framework module Pods_PHPAPI {
+  umbrella header "Pods-PHPAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
