@@ -20,6 +20,7 @@ import CoreLocation
 enum DomainType : String  {
 
     case release  = "http://172.16.2.39:8080/"
+    case release2  = "http://172.16.2.39:8181/"
 }
 class DDRequestManager: NSObject {
     let version = ""
@@ -92,6 +93,25 @@ class DDRequestManager: NSObject {
             return result
         
         }else{return nil }
+    }
+    func testRequestPerfect()  {
+        let url = DomainType.release2.rawValue + "hello?name=heikeheike"
+        if let url  = URL(string: url){
+            let result = Alamofire.request(url , method: .get , parameters: nil ).responseJSON(completionHandler: { (response) in
+                mylog(response.value)
+                //                if print{mylog(response.debugDescription.unicodeStr)}
+                switch response.result{
+                case .success :
+                    break
+                    
+                case .failure :
+                    //                    mylog(response.debugDescription.unicodeStr)
+                    //                    GDAlertView.alert("请求失败,请重试", image: nil , time: 2, complateBlock: nil )//请求超时处理
+                    break
+                }
+            })
+            
+        }
     }
    
     func downloadMp3(musicName:String , complite:(()->())? = nil )  {

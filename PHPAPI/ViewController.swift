@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let color = UIColor.red.withAlphaComponent(0.1);
+    self.navigationController?.navigationBar.barTintColor = color 
 //        testPHP()
 //         MusicPlayer.share.playMusic(url: "")
         // Do any additional setup after loading the view, typically from a nib.

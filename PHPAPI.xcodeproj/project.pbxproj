@@ -20,6 +20,7 @@
 		157BF4AB206889FA002C1CED /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157BF4AA206889F9002C1CED /* MusicPlayer.swift */; };
 		15867C1F20690A6700906E96 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15867C1E20690A6700906E96 /* PlayVC.swift */; };
 		15867C2120690AE000906E96 /* VC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15867C2020690AE000906E96 /* VC+Extension.swift */; };
+		15ADB659206DC78300C62771 /* TestSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ADB658206DC78300C62771 /* TestSocket.swift */; };
 		EA262AB44CC9F0F531B8AA80 /* Pods_PHPAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BBC854654F95F2BF0AAC1B /* Pods_PHPAPI.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		157BF4AA206889F9002C1CED /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		15867C1E20690A6700906E96 /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
 		15867C2020690AE000906E96 /* VC+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC+Extension.swift"; sourceTree = "<group>"; };
+		15ADB658206DC78300C62771 /* TestSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSocket.swift; sourceTree = "<group>"; };
 		1BEDA16470318B712D67F6FA /* Pods-PHPAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHPAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHPAPI/Pods-PHPAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		26BBC854654F95F2BF0AAC1B /* Pods_PHPAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PHPAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6B4E893FD0515B117EFDAC /* Pods-PHPAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHPAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHPAPI/Pods-PHPAPI.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				151DB0B7205FE4B6008E08E7 /* ViewController.swift */,
 				153772862060A6320019B275 /* TableViewController.swift */,
 				157BF4AA206889F9002C1CED /* MusicPlayer.swift */,
+				15ADB658206DC78300C62771 /* TestSocket.swift */,
 				15867C1E20690A6700906E96 /* PlayVC.swift */,
 				151DB0B9205FE4B6008E08E7 /* Main.storyboard */,
 				151DB0BC205FE4B6008E08E7 /* Assets.xcassets */,
@@ -287,6 +290,7 @@
 				153772872060A6320019B275 /* TableViewController.swift in Sources */,
 				157BF4AB206889FA002C1CED /* MusicPlayer.swift in Sources */,
 				153772892060E3200019B275 /* DDRequestManager.swift in Sources */,
+				15ADB659206DC78300C62771 /* TestSocket.swift in Sources */,
 				153772852060A4060019B275 /* SelectModel.swift in Sources */,
 				151DB0B6205FE4B5008E08E7 /* AppDelegate.swift in Sources */,
 				15867C2120690AE000906E96 /* VC+Extension.swift in Sources */,
