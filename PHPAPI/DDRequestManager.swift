@@ -94,12 +94,12 @@ class DDRequestManager: NSObject {
         
         }else{return nil }
     }
-    func testRequestPerfect()  {
+    static func testRequestPerfect()  {
         let url = DomainType.release2.rawValue + "hello?name=heikeheike"
         if let url  = URL(string: url){
             let result = Alamofire.request(url , method: .get , parameters: nil ).responseJSON(completionHandler: { (response) in
                 mylog(response.value)
-                //                if print{mylog(response.debugDescription.unicodeStr)}
+                mylog(response.debugDescription)
                 switch response.result{
                 case .success :
                     break

@@ -1,19 +1,19 @@
 PODS:
   - Alamofire (4.5.1)
-  - CocoaAsyncSocket (7.6.2)
-  - CocoaLumberjack (3.3.0):
-    - CocoaLumberjack/Default (= 3.3.0)
-    - CocoaLumberjack/Extensions (= 3.3.0)
-  - CocoaLumberjack/Default (3.3.0)
-  - CocoaLumberjack/Extensions (3.3.0):
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
-  - CryptoSwift (0.8.3)
+  - CryptoSwift (0.9.0)
   - Differentiator (3.0.2)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - HandyJSON (4.0.0-beta.1)
-  - KissXML (5.2.0)
+  - KissXML (5.2.2)
   - libidn (1.33)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
@@ -64,21 +64,21 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CryptoSwift:
-    :commit: e5ddc20595de16abf354d1bd09b81939dc90a987
+    :commit: 2c90677112ff2e045f74fe5376b59bc3882b48da
     :git: https://github.com/krzyzanowskim/CryptoSwift
   XMPPFramework:
-    :commit: 510b6f80cb683541b22de4854bc040f480ff83bd
+    :commit: 6a2754ed448f6c77ef8cdaa6ea4fdf039481e51c
     :git: https://github.com/robbiehanson/XMPPFramework.git
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
-  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  CryptoSwift: 033efc3523865d19cc6ab6612fa17a62613b5dfa
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CryptoSwift: ba0dcdfcb2f5307ae8ef55a2d4ad394d2c3cf80f
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
-  KissXML: 1c1eeeb6b94e4522cd2f2373e5d0d03c9227738f
+  KissXML: 4418f32138aec43797891845d682b00fc8cd4677
   libidn: 90fc1a62b60288dcf543f13f4ebca913f17d829f
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a

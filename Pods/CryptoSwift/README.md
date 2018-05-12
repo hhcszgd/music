@@ -1,13 +1,23 @@
 [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS%20%7C%20Linux-4E4E4E.svg?colorA=28a745)](#installation)
-[![Swift support](https://img.shields.io/badge/Swift-3.1%20%7C%203.2%20%7C%204.0-lightgrey.svg?colorA=28a745&colorB=4E4E4E)](#swift-versions-support)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CryptoSwift.svg?style=flat&label=CocoaPods)](https://cocoapods.org/pods/CryptoSwift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat&colorB=64A5DE)](https://github.com/Carthage/Carthage)
-[![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg?style=flat&colorB=64A5DE)](https://github.com/apple/swift-package-manager)
-[![Twitter](https://img.shields.io/badge/twitter-@krzyzanowskim-blue.svg?style=flat&colorB=64A5DE&label=Twitter)](http://twitter.com/krzyzanowskim)
+[![Swift support](https://img.shields.io/badge/Swift-3.1%20%7C%203.2%20%7C%204.0%20%7C%204.1-lightgrey.svg?colorA=28a745&colorB=4E4E4E)](#swift-versions-support)
+
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CryptoSwift.svg?style=flat&label=CocoaPods&colorA=28a745&&colorB=4E4E4E)](https://cocoapods.org/pods/CryptoSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat&colorA=28a745&&colorB=4E4E4E)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg?style=flat&colorA=28a745&&colorB=4E4E4E)](https://github.com/apple/swift-package-manager)
+
+[![Twitter](https://img.shields.io/badge/twitter-@krzyzanowskim-blue.svg?style=flat&label=Contact&colorA=28a745&&colorB=4E4E4E)](http://twitter.com/krzyzanowskim)
 
 # CryptoSwift
 
-Crypto related functions and helpers for [Swift](https://swift.org) implemented in Swift. ([#PureSwift](https://twitter.com/hashtag/pureswift)) 
+Crypto related functions and helpers for [Swift](https://swift.org) implemented in Swift. ([#PureSwift](https://twitter.com/hashtag/pureswift))
+
+**Notice**: The master branch follows the latest currently released version of Swift. If you need an version for older version of Swift, you can specify it's version in your Podfile or use the code on the branch for that version. Older branches are unsupported. Check [versions](#swift-versions-support) for details.
+
+<hr />
+
+If you find the project useful, please [support authors](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=92Z6U3LBHF9J4) to keep it alive.
+
+<hr />
 
 # Table of Contents
 - [Requirements](#requirements)
@@ -29,9 +39,6 @@ Good mood
 - Convenient extensions for String and Data
 - Support for incremental updates (stream, ...)
 - iOS, macOS, AppleTV, watchOS, Linux support
-
-## Donation
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=92Z6U3LBHF9J4) to make the CryptoSwift awesome! Thank you.
 
 #### Hash (Digest)
 - [MD5](http://tools.ietf.org/html/rfc1321)
@@ -55,6 +62,7 @@ Good mood
 #### Message authenticators
 - [Poly1305](http://cr.yp.to/mac/poly1305-20050329.pdf)
 - [HMAC](https://www.ietf.org/rfc/rfc2104.txt) MD5, SHA1, SHA256
+- [CMAC](https://tools.ietf.org/html/rfc4493)
 
 #### Cipher block mode
 - Electronic codebook ([ECB](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_codebook_.28ECB.29))
@@ -62,7 +70,8 @@ Good mood
 - Propagating Cipher Block Chaining ([PCBC](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Propagating_Cipher_Block_Chaining_.28PCBC.29))
 - Cipher feedback ([CFB](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_feedback_.28CFB.29))
 - Output Feedback ([OFB](http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Output_Feedback_.28OFB.29))
-- Counter ([CTR](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_.28CTR.29))
+- Counter Mode ([CTR](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_.28CTR.29))
+- Galois/Counter Mode ([GCM](https://csrc.nist.gov/publications/detail/sp/800-38d/final))
 
 #### Password-Based Key Derivation Function
 - [PBKDF1](http://tools.ietf.org/html/rfc2898#section-5.1) (Password-Based Key Derivation Function 1)
@@ -75,14 +84,16 @@ Good mood
 - [Zero padding](https://en.wikipedia.org/wiki/Padding_(cryptography)#Zero_padding)
 - No padding
 
+#### Authenticated Encryption with Associated Data (AEAD)
+- [AEAD\_CHACHA20\_POLY1305](https://tools.ietf.org/html/rfc7539#section-2.8)
+
 ## Why
 [Why?](https://github.com/krzyzanowskim/CryptoSwift/issues/5) [Because I can](https://github.com/krzyzanowskim/CryptoSwift/issues/5#issuecomment-53379391).
 
 ## Contribution
 
-For the latest version, please check [develop](https://github.com/krzyzanowskim/CryptoSwift/tree/develop) branch. Changes from this branch will be merged into the [master](https://github.com/krzyzanowskim/CryptoSwift/tree/master) branch at some point.
+Check out [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to help with CryptoSwift.
 
-- If you want to contribute, submit a [pull request](https://github.com/krzyzanowskim/CryptoSwift/pulls) against a development `develop` branch.
 - If you found a bug, [open an issue](https://github.com/krzyzanowskim/CryptoSwift/issues).
 - If you have a feature request, [open an issue](https://github.com/krzyzanowskim/CryptoSwift/issues).
 
@@ -116,7 +127,8 @@ In the project, you'll find [single scheme](http://promisekit.org/news/2016/08/M
 - Swift 2.2, 2.3: branch [swift2](https://github.com/krzyzanowskim/CryptoSwift/tree/swift2) version <= 0.5.2
 - Swift 3.1, branch [swift3](https://github.com/krzyzanowskim/CryptoSwift/tree/swift3) version <= 0.6.9
 - Swift 3.2, branch [swift32](https://github.com/krzyzanowskim/CryptoSwift/tree/swift32) version = 0.7.0
-- Swift 4.0, branch [master](https://github.com/krzyzanowskim/CryptoSwift/tree/master) version >= 0.7.1
+- Swift 4.0, branch [swift4](https://github.com/krzyzanowskim/CryptoSwift/tree/swift4) version >= 0.7.1
+- Swift 4.1, branch [master](https://github.com/krzyzanowskim/CryptoSwift/tree/master) version >= 0.9.0
 
 #### CocoaPods
 
@@ -155,7 +167,7 @@ You can use [Swift Package Manager](https://swift.org/package-manager/) and spec
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMinor(from: "0.8.0"))
+    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMinor(from: "0.9.0"))
 ]
 ```
 
@@ -163,17 +175,19 @@ or more strict
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("0.8.0"))
+    .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("0.9.0"))
 ]
 ```
 
 See: [Package.swift - manual](http://blog.krzyzanowskim.com/2016/08/09/package-swift-manual/)
+
+---
  
 ## Usage
 
 * [Basics (data types, conversion, ...)](#basics)
 * [Digest (MD5, SHA...)](#calculate-digest)
-* [Message authenticators (HMAC...)](#message-authenticators-1)
+* [Message authenticators (HMAC, CMAC...)](#message-authenticators-1)
 * [Password-Based Key Derivation Function (PBKDF2, ...)](#password-based-key-derivation-functions)
 * [HMAC-based Key Derivation Function (HKDF)](#hmac-based-key-derivation-function)
 * [Data Padding](#data-padding)
@@ -181,7 +195,8 @@ See: [Package.swift - manual](http://blog.krzyzanowskim.com/2016/08/09/package-s
 * [Rabbit](#rabbit)
 * [Blowfish](#blowfish)
 * [Advanced Encryption Standard (AES)](#aes)
-
+* [AES-GCM](#aes-gcm)
+* [Authenticated Encryption with Associated Data (AEAD)](#aead)
 
 also check [Playground](/CryptoSwift.playground/Contents.swift)
 
@@ -281,6 +296,7 @@ let key:Array<UInt8> = [1,2,3,4,5,6,7,8,9,10,...]
 
 try Poly1305(key: key).authenticate(bytes)
 try HMAC(key: key, variant: .sha256).authenticate(bytes)
+try CMAC(key: key).authenticate(bytes)
 ```
 
 ##### Password-Based Key Derivation Functions
@@ -326,8 +342,8 @@ let decrypted = try Rabbit(key: key, iv: iv).decrypt(encrypted)
 ##### Blowfish
 
 ```swift
-let encrypted = try Blowfish(key: key, blockMode: .CBC(iv: iv), padding: .pkcs7).encrypt(message)
-let decrypted = try Blowfish(key: key, blockMode: .CBC(iv: iv), padding: .pkcs7).decrypt(encrypted)
+let encrypted = try Blowfish(key: key, blockMode: CBC(iv: iv), padding: .pkcs7).encrypt(message)
+let decrypted = try Blowfish(key: key, blockMode: CBC(iv: iv), padding: .pkcs7).decrypt(encrypted)
 ```
 
 ##### AES
@@ -342,9 +358,9 @@ Variant of AES encryption (AES-128, AES-192, AES-256) depends on given key lengt
 
 AES-256 example
 ```swift
-try AES(key: [1,2,3,...,32], blockMode: .CBC(iv: [1,2,3,...,16]), padding: .pkcs7)
+try AES(key: [1,2,3,...,32], blockMode: CBC(iv: [1,2,3,...,16]), padding: .pkcs7)
 ```
- 
+
 ###### All at once
 ```swift
 do {
@@ -385,8 +401,8 @@ let key: Array<UInt8> = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 let iv: Array<UInt8> = AES.randomIV(AES.blockSize)
 
 do {
-    let encrypted = try AES(key: key, blockMode: .CBC(iv: iv), padding: .pkcs7).encrypt(input)
-    let decrypted = try AES(key: key, blockMode: .CBC(iv: iv), padding: .pkcs7).decrypt(encrypted)
+    let encrypted = try AES(key: key, blockMode: CBC(iv: iv), padding: .pkcs7).encrypt(input)
+    let decrypted = try AES(key: key, blockMode: CBC(iv: iv), padding: .pkcs7).decrypt(encrypted)
 } catch {
     print(error)
 }    
@@ -396,7 +412,7 @@ AES without data padding
 
 ```swift
 let input: Array<UInt8> = [0,1,2,3,4,5,6,7,8,9]
-let encrypted: Array<UInt8> = try! AES(key: Array("secret0key000000".utf8), blockMode: .CBC(iv: Array("0123456789012345".utf8)), padding: .noPadding).encrypt(input)
+let encrypted: Array<UInt8> = try! AES(key: Array("secret0key000000".utf8), blockMode: CBC(iv: Array("0123456789012345".utf8)), padding: .noPadding).encrypt(input)
 ```
 
 Using convenience extensions
@@ -405,6 +421,47 @@ Using convenience extensions
 let plain = Data(bytes: [0x01, 0x02, 0x03])
 let encrypted = try! plain.encrypt(ChaCha20(key: key, iv: iv))
 let decrypted = try! encrypted.decrypt(ChaCha20(key: key, iv: iv))
+```
+
+##### AES-GCM
+
+The result of Galois/Counter Mode (GCM) encryption is ciphertext and **authentication tag**, that is later used to decryption.
+
+encryption
+
+```swift
+do {
+    // In combined mode, the authentication tag is directly appended to the encrypted message. This is usually what you want.
+    let gcm = GCM(iv: iv, mode: .combined)
+    let aes = try AES(key: key, blockMode: gcm, padding: .noPadding)
+    let encrypted = try aes.encrypt(plaintext)
+    let tag = gcm.authenticationTag
+catch {
+    // failed
+}
+```
+
+decryption
+
+```swift
+do {
+    // In combined mode, the authentication tag is directly appended to the encrypted message. This is usually what you want.
+    let gcm = GCM(iv: iv, mode: .combined)
+    let aes = try AES(key: key, blockMode: gcm, padding: .noPadding)
+    return try aes.decrypt(encrypted)
+} catch {
+    // failed
+}
+```
+
+
+Note: GCM instance is not intended to be reused. So you can't use the `GCM` from encoding, do decoding.
+
+##### AEAD
+
+```swift
+let encrypt = try AEADChaCha20Poly1305.encrypt(plaintext, key: key, iv: nonce, authenticationHeader: header)
+let decrypt = try AEADChaCha20Poly1305.decrypt(ciphertext, key: key, iv: nonce, authenticationHeader: header, authenticationTag: tagArr: tag)
 ```
 
 ## Author
